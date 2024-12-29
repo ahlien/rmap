@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/2.1.52/go.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    #inputContainer {
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+    }
+    #inputContainer input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+    #inputContainer button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+    #inputContainer button:hover {
+      background-color: #555;
+    }
+    #myDiagramDiv {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      background-color: white;
+      margin: 20px 0;
+    }
+    #jsonContainer {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .jsonContent {
+      width: 48%;
+      height: auto;
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    #downloadButtons {
+      text-align: center;
+      padding: 20px;
+    }
+    #downloadButtons button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+    #downloadButtons button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div id="inputContainer">
+    <input type="text" id="domainInput" placeholder="Enter domain name">
+    <button onclick="loadDomain()">Load Domain</button>
+    <button onclick="window.location.href='exampleExplanation.html'">Example Explanation</button>
+    <button onclick="window.location.href='researchTeam.html'">Research Team</button>
+  </div>
+  <div id="myDiagramDiv"></div>
+  <div id="jsonContainer">
+    <textarea id="graphContent" class="jsonContent" readonly></textarea>
+    <div id="cacheContent" class="jsonContent"></div>
+  </div>
+  <div id="downloadButtons">
+    <button id="downloadImageButton" onclick="downloadImage()" style="display: none;">Download Image</button>
+    <button id="downloadGraphButton" onclick="downloadJson('graph')" style="display: none;">Download Graph JSON</button>
+    <button id="downloadCacheButton" onclick="downloadJson('cache')" style="display: none;">Download Cache JSON</button>
+  </div>
+  <script>
+    let diagram;
+    let currentGraphData;
+    let currentCacheData;
+
+    function init() {
+      const $ = go.GraphObject.make;
+      diagram = $(go.Diagram, "myDiagramDiv", {
+        "undoManager.isEnabled": true,  // enable undo & redo
+        layout: $(go.LayeredDigraphLayout, {
+          direction: 90,  // 从上到下布局
+          layerSpacing: 100,  // 图层之间的距离
+          columnSpacing: 30  // 列之间的距离
+        })
+      });
+
+   // 节点模板
+  diagram.nodeTemplate =
+    $(go.Node, "Auto",
+      $(go.Shape, "RoundedRectangle", { strokeWidth: 0 },
+        new go.Binding("fill", "NodeType", function(type) {
+          switch (type) {
+            case "Begin": return "lightblue";
+            case "FormErr": return "red";
+            case "Serverfailure": return "red";
+            case "NXDOMAIN": return "red";
+            case "NotImplemented": return "red";
+            case "Refused": return "red";
+            case "Timeout": return "red";
+            case "NoNsrecord": return "red";
+            case "NsNotGlueIP": return "Orange";
+            case "IPerror": return "red";
+            case "IDMisMatch": return "red";
+            case "LeaveA": return "blue";
+            case "LeaveAAAA": return "blue";
+            case "LeaveCNAME": return "yellow";
+            case "SOA": return "red";
+            case "Hijack": return "red";
+            case "Common": return "lightblue";
+            case "NsInAnswer": return "red";
+            case "PacketErr": return "red";
+            case "YXDomain": return "red";
+            case "Root": return "green";
+            case "NonRoutableIP": return "red";
+            // Add other cases for different NodeTypes if necessary
+            default: return "black";
+          }
+        })
+      ),
+          $(go.TextBlock, { margin: 32, editable: true },
+            { margin: 8, editable: true, font: "bold 20pt sans-serif" }, 
+            new go.Binding("text", "", function(data) {
+              return data.key === 1 ? data.Domain : data.key.toString();
+            })
+          ),
+          {
+            toolTip: // 添加悬浮框
+              $(go.Adornment, "Auto",
+                $(go.Shape, { fill: "#FFFFCC" }),
+                $(go.Panel, "Vertical",
+                  $(go.TextBlock, "Node Information", { font: "bold 12pt sans-serif", margin: new go.Margin(5, 10, 5, 10) }),
+                  $(go.TextBlock, { margin: new go.Margin(0, 10, 5, 10) },
+                    new go.Binding("text", "", function(data) {
+                      return `Nameserver: ${data.NameServer || 'N/A'}\n Zone: ${data.Zone || 'N/A'}\nIP: ${data.IP || 'N/A'}`;
+                    })
+                  ),
+                  $(go.Shape, "LineH", { strokeWidth: 2, height: 2, stretch: go.GraphObject.Horizontal, margin: new go.Margin(5, 10) }),
+                  $(go.TextBlock, { margin: new go.Margin(0, 10, 5, 10) },
+                    new go.Binding("text", "", function(data) {
+                      return `Domain: ${data.Domain}\nQType: ${data.QType || 'N/A'}\nNodeType: ${data.NodeType}`;
+                    })
+                  )
+                )
+              )
+          }
+        );
+
+      // 边模板
+      diagram.linkTemplate =
+        $(go.Link,
+          // { routing: go.Link.AvoidsNodes, curve: go.Link.Normal, curviness: 20 },  // 使用弧线
+          $(go.Shape, { stroke: "black" }),
+          $(go.Shape, { toArrow: "Standard", stroke: "black", fill: "black" })
+        );
+    }
+
+    function loadDomain() {
+      const domain = document.getElementById('domainInput').value;
+      if (!domain) {
+        alert('Please enter a domain name');
+        return;
+      }
+
+      const graphFileName = domain.replace(/\./g, '_') + '.json';
+      const cacheFileName = domain.replace(/\./g, '_') + '_cache.json';
+
+      Promise.all([
+        fetch(`store/${graphFileName}`).then(response => response.json()),
+        fetch(`store/${cacheFileName}`).then(response => response.json())
+      ]).then(([graphData, cacheData]) => {
+        currentGraphData = graphData;
+        currentCacheData = cacheData;
+        displayJson(graphData, 'graph');
+        displayCacheData(cacheData);
+        
+        const nodeDataArray = graphData.nodes.map(node => ({
+          key: node.NodeID,
+          level: node.Level, // 添加层次信息
+          NodeType: node.NodeType, // 节点类型
+          Domain: node.Domain, // 添加域名信息
+          NameServer: node.NameServer, // 添加nameserver信息
+          Zone:node.Zone, // 添加 Zone 信息
+          IP: node.IP, // 添加IP信息
+          QType: node.QType // 添加QType信息
+        }));
+        const linkDataArray = graphData.edges.map(edge => ({
+          from: edge.FromNodeID,
+          to: edge.ToNodeID,
+          Label: edge.Label
+        }));
+        
+        diagram.model = new go.GraphLinksModel(nodeDataArray, linkDataArray);
+      }).catch(error => {
+        console.error('Error fetching the JSON files:', error);
+
+        // 调用 Go 程序并传递参数
+        const startTime = new Date();
+        const exec = require('child_process').exec;
+        const command = `stest.exe -d ${domain} -mod 2`;
+
+        alert('Calling backend parsing program. Please wait...');
+        exec(command, (error, stdout, stderr) => {
+          const endTime = new Date();
+          const executionTime = (endTime - startTime) / 1000; // 秒
+
+          if (error) {
+            console.error(`Error executing test.exe: ${error.message}`);
+            alert(`Error executing backend program: ${error.message}`);
+            return;
+          }
+
+          if (stderr) {
+            console.error(`stderr: ${stderr}`);
+            alert(`Backend program error: ${stderr}`);
+            return;
+          }
+
+          console.log(`stdout: ${stdout}`);
+          alert(`Backend program executed successfully in ${executionTime} seconds.`);
+          loadDomain();
+        });
+        alert('Error loading domain data. Please check the domain name and try again.');
+      });
+
+      // 在加载完图数据后,显示下载图片的按钮
+      document.getElementById('downloadImageButton').style.display = 'inline-block';
+    }
+
+    function displayJson(data, type) {
+      const contentElement = document.getElementById(type + 'Content');
+      contentElement.value = JSON.stringify(data, null, 2);
+      document.getElementById('download' + type.charAt(0).toUpperCase() + type.slice(1) + 'Button').style.display = 'inline-block';
+    }
+
+    function displayCacheData(cacheData) {
+      const cacheContent = document.getElementById('cacheContent');
+      cacheContent.innerHTML = ''; // Clear previous content
+
+      const domain = cacheData.Domain || 'N/A';
+      const cnames = cacheData.CNamelink || 'N/A';
+      const records = cacheData.Records || {};
+      const errors = cacheData.Errors || {};
+
+      // Create table for records
+      const recordsTable = document.createElement('table');
+      const recordsHeader = recordsTable.createTHead();
+      const recordsHeaderRow = recordsHeader.insertRow(0);
+      recordsHeaderRow.innerHTML = '<th>NameServer</th><th>IPv4(Glue)</th><th>IPv6(Glue)</th>';
+      const recordsBody = recordsTable.createTBody();
+
+      const displayedNameServers = new Set();
+
+      Object.keys(records).forEach(recordKey => {
+        records[recordKey].forEach(record => {
+          if (!displayedNameServers.has(record.NameServer)) {
+            displayedNameServers.add(record.NameServer);
+            const row = recordsBody.insertRow();
+            row.insertCell(0).innerText = record.NameServer;
+            row.insertCell(1).innerText = (record.IPv4GlueIPs || []).join(', ');
+            row.insertCell(2).innerText = (record.IPv6GlueIPs || []).join(', ');
+          }
+        });
+      });
+
+      // Create table for errors
+      const errorsTable = document.createElement('table');
+      const errorsHeader = errorsTable.createTHead();
+      const errorsHeaderRow = errorsHeader.insertRow(0);
+      errorsHeaderRow.innerHTML = '<th>Error Type</th><th>Value</th>';
+      const errorsBody = errorsTable.createTBody();
+
+      Object.keys(errors).forEach(errorKey => {
+        const row = errorsBody.insertRow();
+        row.insertCell(0).innerText = errorKey;
+        row.insertCell(1).innerText = errors[errorKey];
+      });
+
+      // Append tables to cacheContent
+      cacheContent.appendChild(recordsTable);
+      cacheContent.appendChild(document.createElement('br')); // Add space between tables
+      cacheContent.appendChild(errorsTable);
+    }
+
+    function downloadJson(type) {
+      const data = type === 'graph' ? currentGraphData : currentCacheData;
+      if (!data) return;
+
+      const jsonString = JSON.stringify(data, null, 2);
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = document.getElementById('domainInput').value.replace(/\./g, '_') + (type === 'graph' ? '.json' : '_cache.json');
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function downloadImage() {
+      const domain = document.getElementById('domainInput').value;
+      if (!domain) {
+        alert('Please enter a domain name');
+        return;
+      }
+
+      const imageFileName = domain.replace(/\./g, '_') + '.png';
+
+      diagram.makeImageData({
+        background: 'white',
+        returnType: 'blob',
+        callback: function(blob) {
+          const url = window.URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = imageFileName;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          window.URL.revokeObjectURL(url);
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>

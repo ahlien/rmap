@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/2.1.52/go.js"></script>
+  <style>
+    #myDiagramDiv {
+      width: 100%;
+      height: 600px;
+      border: 1px solid black;
+    }
+    #inputContainer, #jsonContainer {
+      margin-bottom: 10px;
+    }
+    .jsonContent {
+      width: 48%;
+      height: 200px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    #downloadButtons {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="inputContainer">
+    <input type="text" id="domainInput" placeholder="Enter domain name">
+    <button onclick="loadDomain()">Load Domain</button>
+  </div>
+  <div id="myDiagramDiv"></div>
+  <div id="jsonContainer">
+    <textarea id="graphContent" class="jsonContent" readonly></textarea>
+    <textarea id="cacheContent" class="jsonContent" readonly></textarea>
+  </div>
+  <div id="downloadButtons">
+    <button id="downloadImageButton" onclick="downloadImage()" style="display: none;">Download Image</button>
+    <button id="downloadGraphButton" onclick="downloadJson('graph')" style="display: none;">Download Graph JSON</button>
+    <button id="downloadCacheButton" onclick="downloadJson('cache')" style="display: none;">Download Cache JSON</button>
+  </div>
+  <script>
+    let diagram;
+    let currentGraphData;
+    let currentCacheData;
+
+    function init() {
+      const $ = go.GraphObject.make;
+      diagram = $(go.Diagram, "myDiagramDiv", {
+        "undoManager.isEnabled": true,  // enable undo & redo
+        layout: $(go.LayeredDigraphLayout, {
+          direction: 90,  // 从上到下布局
+          layerSpacing: 100,  // 图层之间的距离
+          columnSpacing: 30  // 列之间的距离
+        })
+      });
+
+      // 节点模板
+      diagram.nodeTemplate =
+        $(go.Node, "Auto",
+          $(go.Shape, "RoundedRectangle", { strokeWidth: 0 },
+            new go.Binding("fill", "nodeType", function(type) {
+              switch (type) {
+                case 0: return "lightblue";      // Begin
+                case 1: return "red";            // FormErr
+                case 2: return "red";         // Serverfailure
+                case 3: return "red";         // NXDOMAIN
+                case 4: return "red";         // NotImplemented
+                case 5: return "red";           // Refused
+                case 6: return "red";           // Timeout
+                case 7: return "red";     // NoNsrecord
+                case 8: return "Orange";           // NsNotGlueIP
+                case 9: return "red";          // IPerror
+                case 10: return "red";      // IDMisMatch
+                case 11: return "blue";     // LeaveA
+                case 12: return "blue";       // LeaveAAAA
+                case 13: return "yellow";    // LeaveCNAME
+                case 14: return "red";    // SOA
+                case 15: return "red";    // Hijack
+                case 16: return "lightblue";      // Common
+                case 17: return "red";      // NsInAnswer
+                case 18: return "red"; // PacketErr
+                case 19: return "red";      // YXDomain
+                case 20: return "green";    // Root
+                case 21: return "red";     // NonRoutableIP
+                // Add other cases for different NodeTypes if necessary
+                default: return "white";
+              }
+            })
+          ),
+          $(go.TextBlock, { margin: 32, editable: true },
+          { margin: 8, editable: true, font: "bold 20pt sans-serif" }, 
+            new go.Binding("text", "key"))
+        );
+
+      // 边模板
+      diagram.linkTemplate =
+        $(go.Link,
+          // { routing: go.Link.AvoidsNodes, curve: go.Link.Normal, curviness: 20 },  // 使用弧线
+          $(go.Shape, { stroke: "black" }),
+          $(go.Shape, { toArrow: "Standard", stroke: "black", fill: "black" })
+        );
+    }
+
+    function loadDomain() {
+      const domain = document.getElementById('domainInput').value;
+      if (!domain) {
+        alert('Please enter a domain name');
+        return;
+      }
+
+      const graphFileName = domain.replace(/\./g, '_') + '.json';
+      const cacheFileName = domain.replace(/\./g, '_') + '_cache.json';
+
+      Promise.all([
+        fetch(`store/${graphFileName}`).then(response => response.json()),
+        fetch(`store/${cacheFileName}`).then(response => response.json())
+      ]).then(([graphData, cacheData]) => {
+        currentGraphData = graphData;
+        currentCacheData = cacheData;
+        displayJson(graphData, 'graph');
+        displayJson(cacheData, 'cache');
+        
+        const nodeDataArray = graphData.nodes.map(node => ({
+          key: node.NodeID,
+          level: node.Level, // 添加层次信息
+          nodeType: node.NodeType // 节点类型
+        }));
+        const linkDataArray = graphData.edges.map(edge => ({
+          from: edge.FromNodeID,
+          to: edge.ToNodeID,
+          Label: edge.Label
+        }));
+        
+        diagram.model = new go.GraphLinksModel(nodeDataArray, linkDataArray);
+      }).catch(error => {
+        console.error('Error fetching the JSON files:', error);
+        alert('Error loading domain data. Please check the domain name and try again.');
+      });
+
+      // 在加载完图数据后,显示下载图片的按钮
+      document.getElementById('downloadImageButton').style.display = 'inline-block';
+    }
+
+    function displayJson(data, type) {
+      const contentElement = document.getElementById(type + 'Content');
+      contentElement.value = JSON.stringify(data, null, 2);
+      document.getElementById('download' + type.charAt(0).toUpperCase() + type.slice(1) + 'Button').style.display = 'inline-block';
+    }
+
+    function downloadJson(type) {
+      const data = type === 'graph' ? currentGraphData : currentCacheData;
+      if (!data) return;
+
+      const jsonString = JSON.stringify(data, null, 2);
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = document.getElementById('domainInput').value.replace(/\./g, '_') + (type === 'graph' ? '.json' : '_cache.json');
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function downloadImage() {
+      const domain = document.getElementById('domainInput').value;
+      if (!domain) {
+        alert('Please enter a domain name');
+        return;
+      }
+
+      const imageFileName = domain.replace(/\./g, '_') + '.png';
+
+      diagram.makeImageData({
+        background: 'white',
+        returnType: 'blob',
+        callback: function(blob) {
+          const url = window.URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = imageFileName;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          window.URL.revokeObjectURL(url);
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>

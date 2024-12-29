@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/2.1.52/go.js"></script>
+  <style>
+    #myDiagramDiv {
+      width: 100%;
+      height: 600px;
+      border: 1px solid black;
+    }
+    #inputContainer {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="inputContainer">
+    <input type="text" id="domainInput" placeholder="Enter domain name">
+    <button onclick="loadDomain()">Load Domain</button>
+  </div>
+  <div id="myDiagramDiv"></div>
+  <script>
+    let diagram;
+
+    function init() {
+      const $ = go.GraphObject.make;
+      diagram = $(go.Diagram, "myDiagramDiv", {
+        "undoManager.isEnabled": true  // enable undo & redo
+      });
+
+      diagram.nodeTemplate =
+        $(go.Node, "Auto",
+          $(go.Shape, "RoundedRectangle", { strokeWidth: 0, fill: "lightblue" }),
+          $(go.TextBlock, { margin: 8, editable: true },
+            new go.Binding("text", "key"))
+        );
+
+      diagram.linkTemplate =
+        $(go.Link,
+          $(go.Shape, { stroke: "black" }),
+          $(go.Shape, { toArrow: "Standard", stroke: "black", fill: "black" })
+        );
+    }
+
+    function loadDomain() {
+      const domain = document.getElementById('domainInput').value;
+      if (!domain) {
+        alert('Please enter a domain name');
+        return;
+      }
+
+      const fileName = domain.replace(/\./g, '_') + '.json';
+      fetch(`store/${fileName}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log('Nodes:', data.nodes);
+          console.log('Edges:', data.edges);
+          
+          const nodeDataArray = data.nodes.map(node => ({
+            key: node.NodeID
+          }));
+          const linkDataArray = data.edges.map(edge => ({
+            from: edge.FromNodeID,
+            to: edge.ToNodeID,
+            Label: edge.Label
+          }));
+          
+          console.log('Node Data Array:', nodeDataArray);
+          console.log('Link Data Array:', linkDataArray);
+          
+          diagram.model = new go.GraphLinksModel(nodeDataArray, linkDataArray);
+        })
+        .catch(error => {
+          console.error('Error fetching the JSON file:', error);
+          alert('Error loading domain data. Please check the domain name and try again.');
+        });
+    }
+
+    init();
+  </script>
+</body>
+</html>

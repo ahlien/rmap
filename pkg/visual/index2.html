@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/2.1.52/go.js"></script>
+  <style>
+    #myDiagramDiv {
+      width: 100%;
+      height: 600px;
+      border: 1px solid black;
+    }
+    #inputContainer, #jsonContainer {
+      margin-bottom: 10px;
+    }
+    #jsonContent {
+      width: 100%;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="inputContainer">
+    <input type="text" id="domainInput" placeholder="Enter domain name">
+    <button onclick="loadDomain()">Load Domain</button>
+  </div>
+  <div id="myDiagramDiv"></div>
+  <div id="jsonContainer">
+    <textarea id="jsonContent" readonly></textarea>
+    <button id="downloadButton" onclick="downloadJson()" style="display: none;">Download JSON</button>
+  </div>
+  <script>
+    let diagram;
+    let currentJsonData;
+
+    function init() {
+      const $ = go.GraphObject.make;
+      diagram = $(go.Diagram, "myDiagramDiv", {
+        "undoManager.isEnabled": true  // enable undo & redo
+      });
+
+      diagram.nodeTemplate =
+        $(go.Node, "Auto",
+          $(go.Shape, "RoundedRectangle", { strokeWidth: 0, fill: "lightblue" }),
+          $(go.TextBlock, { margin: 8, editable: true },
+            new go.Binding("text", "key"))
+        );
+
+      diagram.linkTemplate =
+        $(go.Link,
+          $(go.Shape, { stroke: "black" }),
+          $(go.Shape, { toArrow: "Standard", stroke: "black", fill: "black" })
+        );
+    }
+
+    function loadDomain() {
+      const domain = document.getElementById('domainInput').value;
+      if (!domain) {
+        alert('Please enter a domain name');
+        return;
+      }
+
+      const fileName = domain.replace(/\./g, '_') + '.json';
+      fetch(`store/${fileName}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        })
+        .then(data => {
+          currentJsonData = data;
+          displayJson(data);
+          
+          const nodeDataArray = data.nodes.map(node => ({
+            key: node.NodeID
+          }));
+          const linkDataArray = data.edges.map(edge => ({
+            from: edge.FromNodeID,
+            to: edge.ToNodeID,
+            Label: edge.Label
+          }));
+          
+          diagram.model = new go.GraphLinksModel(nodeDataArray, linkDataArray);
+        })
+        .catch(error => {
+          console.error('Error fetching the JSON file:', error);
+          alert('Error loading domain data. Please check the domain name and try again.');
+        });
+    }
+
+    function displayJson(data) {
+      const jsonContent = document.getElementById('jsonContent');
+      jsonContent.value = JSON.stringify(data, null, 2);
+      document.getElementById('downloadButton').style.display = 'inline-block';
+    }
+
+    function downloadJson() {
+      if (!currentJsonData) return;
+
+      const jsonString = JSON.stringify(currentJsonData, null, 2);
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = document.getElementById('domainInput').value.replace(/\./g, '_') + '.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    init();
+  </script>
+</body>
+</html>

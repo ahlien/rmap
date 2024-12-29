@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Trace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 5px;
+        }
+        #result {
+            white-space: pre-wrap;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>IP Trace</h1>
+    <input type="text" id="ipInput" placeholder="Enter IP address">
+    <button onclick="traceIP()">Trace IP</button>
+    <br>
+    <input type="text" id="domainInput" placeholder="Enter domain name">
+    <button onclick="traceDomain()">Trace Domain</button>
+    <div id="result"></div>
+
+    <script>
+        async function traceIP() {
+            const ip = document.getElementById('ipInput').value;
+            const result = document.getElementById('result');
+            result.textContent = 'Tracing...';
+
+            try {
+                const response = await fetch(`/trace?ip=${ip}`);
+                const data = await response.text();
+                result.textContent = data;
+            } catch (error) {
+                result.textContent = 'Error: ' + error.message;
+            }
+        }
+
+        async function traceDomain() {
+            const domain = document.getElementById('domainInput').value;
+            const result = document.getElementById('result');
+            result.textContent = 'Tracing...';
+
+            try {
+                const response = await fetch(`/trace?domain=${domain}`);
+                const data = await response.text();
+                result.textContent = data;
+            } catch (error) {
+                result.textContent = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

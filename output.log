@@ -1,0 +1,36 @@
+nohup: ignoring input
+Executing: ./cache -l domain1.txt -mod 3 -p 1
+real	1m58.308s
+Executing: ./cache -l domain10.txt -mod 3 -p 1
+real	19m30.081s
+Executing: ./cache -l domain100.txt -mod 3 -p 1
+real	199m11.160s
+Executing: ./cache -l domain200.txt -mod 3 -p 1
+real	350m59.765s
+Executing: ./cache -l domain1.txt -mod 3 -p 10
+real	1m48.654s
+Executing: ./cache -l domain10.txt -mod 3 -p 10
+real	1m49.748s
+Executing: ./cache -l domain100.txt -mod 3 -p 10
+real	18m20.484s
+Executing: ./cache -l domain200.txt -mod 3 -p 10
+real	36m6.621s
+Executing: ./cache -l domain1.txt -mod 3 -p 100
+real	1m53.399s
+Executing: ./cache -l domain10.txt -mod 3 -p 100
+real	2m0.845s
+Executing: ./cache -l domain100.txt -mod 3 -p 100
+real	2m2.510s
+Executing: ./cache -l domain200.txt -mod 3 -p 100
+real	3m59.388s
+Executing: ./cache -l domain1.txt -mod 3 -p 200
+real	1m45.766s
+Executing: ./cache -l domain10.txt -mod 3 -p 200
+real	1m47.204s
+Executing: ./cache -l domain100.txt -mod 3 -p 200
+real	1m54.575s
+Executing: ./cache -l domain200.txt -mod 3 -p 200
+real	2m2.750s
+Executing: ./nocache -l domain1.txt -mod 3 -p 1
+real	262m2.304s
+Executing: ./nocache -l domain10.txt -mod 3 -p 1
