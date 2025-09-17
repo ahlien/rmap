@@ -1,0 +1,202 @@
+{
+  "Domain": "dzen.ru",
+  "CNamelink": [],
+  "Errors": {
+    "SuccessfullyParsed": true,
+    "TimeoutOccurred": false,
+    "RecursionAvailable": false,
+    "SOAInAuthority": true,
+    "CNAMECircularRef": false,
+    "NsInAnswerFound": false,
+    "PacketFormatError": false,
+    "SOAInAnswerFound": false,
+    "OPTError": false,
+    "MultiCircularRef": false,
+    "OneCircularRef": false,
+    "InvalidIP": false,
+    "IPv4Reserved": false,
+    "IPv6Reserved": false,
+    "RootAuthOverride": false,
+    "NonRootAuthOverride": true,
+    "NoNsRecordFound": false,
+    "NSNotGlueIP": false,
+    "AuthOverrideWithGlueIP": true,
+    "RedirectToRoot": false,
+    "ResourceReuse": false,
+    "NonRoutableIP": false,
+    "CircularDependencies": false,
+    "ANSintheSameAS": true,
+    "ANSv4under24prefix": false,
+    "ANSv6under64prefix": false,
+    "ANSv6under48prefix": false,
+    "NotOnlyOneCnameRR": false,
+    "SameRRinAnswer": false,
+    "SameRRinAuthority": false,
+    "SameRRinAddiditional": false,
+    "OtherError": false,
+    "UnsupportedDNSKEYAlgorithm": false,
+    "UnsupportedDSDigestType": false,
+    "StaleAnswer": false,
+    "ForgedAnswer": false,
+    "DNSSECIndeterminate": false,
+    "DNSSECBogus": false,
+    "SignatureExpired": false,
+    "SignatureNotYetValid": false,
+    "DNSKEYMissing": false,
+    "RRSIGsMissing": false,
+    "NoZoneKeyBitSet": false,
+    "NSECMissing": false,
+    "CachedError": false,
+    "NotReady": false,
+    "Blocked": false,
+    "Censored": false,
+    "Filtered": false,
+    "Prohibited": false,
+    "StaleNXDOMAINAnswer": false,
+    "NotAuthoritative": false,
+    "NotSupported": false,
+    "NoReachableAuthority": false,
+    "NetworkError": false,
+    "InvalidData": false,
+    "NoError": false,
+    "FormatError": false,
+    "ServerFailure": false,
+    "NXDOMAIN": false,
+    "NotImplemented": false,
+    "Refused": false,
+    "YXDomain": false,
+    "YXRRSet": false,
+    "NXRRSet": false,
+    "NotAuth": false,
+    "NotZone": false
+  },
+  "Records": {
+    "dzen.ru|193.232.128.6|1": [
+      {
+        "NameServer": "ns1.mail.ru.",
+        "IPv4GlueIPs": [
+          "217.69.139.112"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns2.mail.ru.",
+        "IPv4GlueIPs": [
+          "94.100.180.138"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "dzen.ru|193.232.142.17|1": [
+      {
+        "NameServer": "ns1.mail.ru.",
+        "IPv4GlueIPs": [
+          "217.69.139.112"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns2.mail.ru.",
+        "IPv4GlueIPs": [
+          "94.100.180.138"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "dzen.ru|193.232.156.17|1": [
+      {
+        "NameServer": "ns2.mail.RU.",
+        "IPv4GlueIPs": [
+          "94.100.180.138"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns1.mail.RU.",
+        "IPv4GlueIPs": [
+          "217.69.139.112"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "dzen.ru|194.190.124.17|1": [
+      {
+        "NameServer": "ns2.mail.RU.",
+        "IPv4GlueIPs": [
+          "94.100.180.138"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns1.mail.RU.",
+        "IPv4GlueIPs": [
+          "217.69.139.112"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "dzen.ru|194.85.252.62|1": [
+      {
+        "NameServer": "ns1.mail.ru.",
+        "IPv4GlueIPs": [
+          "217.69.139.112"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns2.mail.ru.",
+        "IPv4GlueIPs": [
+          "94.100.180.138"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "dzen.ru|199.9.14.201|1": [
+      {
+        "NameServer": "a.dns.ripn.net.",
+        "IPv4GlueIPs": [
+          "193.232.128.6"
+        ],
+        "IPv6GlueIPs": [
+          "2001:678:17:0:193:232:128:6"
+        ]
+      },
+      {
+        "NameServer": "b.dns.ripn.net.",
+        "IPv4GlueIPs": [
+          "194.85.252.62"
+        ],
+        "IPv6GlueIPs": [
+          "2001:678:16:0:194:85:252:62"
+        ]
+      },
+      {
+        "NameServer": "d.dns.ripn.net.",
+        "IPv4GlueIPs": [
+          "194.190.124.17"
+        ],
+        "IPv6GlueIPs": [
+          "2001:678:18:0:194:190:124:17"
+        ]
+      },
+      {
+        "NameServer": "e.dns.ripn.net.",
+        "IPv4GlueIPs": [
+          "193.232.142.17"
+        ],
+        "IPv6GlueIPs": [
+          "2001:678:15:0:193:232:142:17"
+        ]
+      },
+      {
+        "NameServer": "f.dns.ripn.net.",
+        "IPv4GlueIPs": [
+          "193.232.156.17"
+        ],
+        "IPv6GlueIPs": [
+          "2001:678:14:0:193:232:156:17"
+        ]
+      }
+    ]
+  }
+}

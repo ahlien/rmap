@@ -1,0 +1,1781 @@
+{
+  "Domain": "amazonaws.com",
+  "CNamelink": [],
+  "Errors": {
+    "SuccessfullyParsed": true,
+    "TimeoutOccurred": false,
+    "RecursionAvailable": false,
+    "SOAInAuthority": true,
+    "CNAMECircularRef": false,
+    "NsInAnswerFound": false,
+    "PacketFormatError": false,
+    "SOAInAnswerFound": false,
+    "OPTError": false,
+    "MultiCircularRef": false,
+    "OneCircularRef": false,
+    "InvalidIP": false,
+    "IPv4Reserved": false,
+    "IPv6Reserved": false,
+    "RootAuthOverride": false,
+    "NonRootAuthOverride": true,
+    "NoNsRecordFound": false,
+    "NSNotGlueIP": true,
+    "AuthOverrideWithGlueIP": true,
+    "RedirectToRoot": false,
+    "ResourceReuse": false,
+    "NonRoutableIP": false,
+    "CircularDependencies": false,
+    "ANSintheSameAS": true,
+    "ANSv4under24prefix": false,
+    "ANSv6under64prefix": false,
+    "ANSv6under48prefix": false,
+    "NotOnlyOneCnameRR": false,
+    "SameRRinAnswer": false,
+    "SameRRinAuthority": false,
+    "SameRRinAddiditional": false,
+    "OtherError": false,
+    "UnsupportedDNSKEYAlgorithm": false,
+    "UnsupportedDSDigestType": false,
+    "StaleAnswer": false,
+    "ForgedAnswer": false,
+    "DNSSECIndeterminate": false,
+    "DNSSECBogus": false,
+    "SignatureExpired": false,
+    "SignatureNotYetValid": false,
+    "DNSKEYMissing": false,
+    "RRSIGsMissing": false,
+    "NoZoneKeyBitSet": false,
+    "NSECMissing": false,
+    "CachedError": false,
+    "NotReady": false,
+    "Blocked": false,
+    "Censored": false,
+    "Filtered": false,
+    "Prohibited": false,
+    "StaleNXDOMAINAnswer": false,
+    "NotAuthoritative": false,
+    "NotSupported": false,
+    "NoReachableAuthority": false,
+    "NetworkError": false,
+    "InvalidData": false,
+    "NoError": false,
+    "FormatError": false,
+    "ServerFailure": false,
+    "NXDOMAIN": false,
+    "NotImplemented": false,
+    "Refused": false,
+    "YXDomain": false,
+    "YXRRSet": false,
+    "NXRRSet": false,
+    "NotAuth": false,
+    "NotZone": false
+  },
+  "Records": {
+    "amazonaws.com|192.12.94.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.26.92.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.31.80.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.33.14.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.35.51.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.41.162.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.42.93.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.43.172.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.48.79.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.5.6.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.52.178.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.54.112.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|192.55.83.30|1": [
+      {
+        "NameServer": "ns-27.awsdns-03.com.",
+        "IPv4GlueIPs": [
+          "205.251.192.27"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-967.awsdns-56.net.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1670.awsdns-16.co.uk.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns-1321.awsdns-37.org.",
+        "IPv4GlueIPs": null,
+        "IPv6GlueIPs": null
+      }
+    ],
+    "amazonaws.com|199.9.14.201|1": [
+      {
+        "NameServer": "a.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.5.6.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:a83e::2:30"
+        ]
+      },
+      {
+        "NameServer": "b.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.33.14.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:231d::2:30"
+        ]
+      },
+      {
+        "NameServer": "c.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.26.92.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:83eb::30"
+        ]
+      },
+      {
+        "NameServer": "d.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.31.80.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:856e::30"
+        ]
+      },
+      {
+        "NameServer": "e.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.12.94.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:1ca1::30"
+        ]
+      },
+      {
+        "NameServer": "f.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.35.51.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:d414::30"
+        ]
+      },
+      {
+        "NameServer": "g.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.42.93.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:eea3::30"
+        ]
+      },
+      {
+        "NameServer": "h.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.54.112.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:8cc::30"
+        ]
+      },
+      {
+        "NameServer": "i.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.43.172.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:39c1::30"
+        ]
+      },
+      {
+        "NameServer": "j.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.48.79.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:7094::30"
+        ]
+      },
+      {
+        "NameServer": "k.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.52.178.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:d2d::30"
+        ]
+      },
+      {
+        "NameServer": "l.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.41.162.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:d937::30"
+        ]
+      },
+      {
+        "NameServer": "m.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.55.83.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:501:b1f9::30"
+        ]
+      }
+    ],
+    "ns-1321.awsdns-37.org.|199.19.53.1|1": [
+      {
+        "NameServer": "g-ns-743.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.194.231"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5302:e700::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1064.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.196.40"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5304:2800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-165.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.192.165"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5300:a500::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1637.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.198.101"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5306:6500::1"
+        ]
+      }
+    ],
+    "ns-1321.awsdns-37.org.|199.19.54.1|1": [
+      {
+        "NameServer": "g-ns-743.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.194.231"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5302:e700::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1064.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.196.40"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5304:2800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1637.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.198.101"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5306:6500::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-165.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.192.165"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5300:a500::1"
+        ]
+      }
+    ],
+    "ns-1321.awsdns-37.org.|199.19.56.1|1": [
+      {
+        "NameServer": "g-ns-165.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.192.165"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5300:a500::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1637.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.198.101"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5306:6500::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1064.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.196.40"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5304:2800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-743.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.194.231"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5302:e700::1"
+        ]
+      }
+    ],
+    "ns-1321.awsdns-37.org.|199.19.57.1|1": [
+      {
+        "NameServer": "g-ns-743.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.194.231"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5302:e700::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-165.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.192.165"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5300:a500::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1064.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.196.40"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5304:2800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1637.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.198.101"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5306:6500::1"
+        ]
+      }
+    ],
+    "ns-1321.awsdns-37.org.|199.249.112.1|1": [
+      {
+        "NameServer": "g-ns-165.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.192.165"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5300:a500::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-743.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.194.231"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5302:e700::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1064.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.196.40"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5304:2800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1637.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.198.101"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5306:6500::1"
+        ]
+      }
+    ],
+    "ns-1321.awsdns-37.org.|199.249.120.1|1": [
+      {
+        "NameServer": "g-ns-743.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.194.231"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5302:e700::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1064.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.196.40"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5304:2800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1637.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.198.101"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5306:6500::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-165.awsdns-37.org.",
+        "IPv4GlueIPs": [
+          "205.251.192.165"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5300:a500::1"
+        ]
+      }
+    ],
+    "ns-1321.awsdns-37.org.|199.9.14.201|1": [
+      {
+        "NameServer": "a0.org.afilias-nst.info.",
+        "IPv4GlueIPs": [
+          "199.19.56.1"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:e::1"
+        ]
+      },
+      {
+        "NameServer": "a2.org.afilias-nst.info.",
+        "IPv4GlueIPs": [
+          "199.249.112.1"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:40::1"
+        ]
+      },
+      {
+        "NameServer": "b0.org.afilias-nst.org.",
+        "IPv4GlueIPs": [
+          "199.19.54.1"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:c::1"
+        ]
+      },
+      {
+        "NameServer": "b2.org.afilias-nst.org.",
+        "IPv4GlueIPs": [
+          "199.249.120.1"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:48::1"
+        ]
+      },
+      {
+        "NameServer": "c0.org.afilias-nst.info.",
+        "IPv4GlueIPs": [
+          "199.19.53.1"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:b::1"
+        ]
+      },
+      {
+        "NameServer": "d0.org.afilias-nst.org.",
+        "IPv4GlueIPs": [
+          "199.19.57.1"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:f::1"
+        ]
+      }
+    ],
+    "ns-1670.awsdns-16.co.uk.|103.49.80.1|1": [
+      {
+        "NameServer": "g-ns-336.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.193.80"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:5000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-912.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.195.144"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:9000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1491.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.197.211"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:d300::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1812.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.199.20"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:1400::1"
+        ]
+      }
+    ],
+    "ns-1670.awsdns-16.co.uk.|156.154.100.3|1": [
+      {
+        "NameServer": "g-ns-1812.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.199.20"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:1400::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-912.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.195.144"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:9000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-336.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.193.80"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:5000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1491.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.197.211"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:d300::1"
+        ]
+      }
+    ],
+    "ns-1670.awsdns-16.co.uk.|156.154.101.3|1": [
+      {
+        "NameServer": "g-ns-1491.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.197.211"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:d300::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-336.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.193.80"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:5000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-912.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.195.144"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:9000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1812.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.199.20"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:1400::1"
+        ]
+      }
+    ],
+    "ns-1670.awsdns-16.co.uk.|156.154.102.3|1": [
+      {
+        "NameServer": "g-ns-1812.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.199.20"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:1400::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-912.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.195.144"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:9000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-336.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.193.80"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:5000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1491.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.197.211"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:d300::1"
+        ]
+      }
+    ],
+    "ns-1670.awsdns-16.co.uk.|156.154.103.3|1": [
+      {
+        "NameServer": "g-ns-1491.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.197.211"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:d300::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-336.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.193.80"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:5000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-912.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.195.144"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:9000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1812.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.199.20"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:1400::1"
+        ]
+      }
+    ],
+    "ns-1670.awsdns-16.co.uk.|199.9.14.201|1": [
+      {
+        "NameServer": "nsa.nic.uk.",
+        "IPv4GlueIPs": [
+          "156.154.100.3"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:ad09::3"
+        ]
+      },
+      {
+        "NameServer": "nsb.nic.uk.",
+        "IPv4GlueIPs": [
+          "156.154.101.3"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:2eda::3"
+        ]
+      },
+      {
+        "NameServer": "nsc.nic.uk.",
+        "IPv4GlueIPs": [
+          "156.154.102.3"
+        ],
+        "IPv6GlueIPs": [
+          "2610:a1:1009::3"
+        ]
+      },
+      {
+        "NameServer": "nsd.nic.uk.",
+        "IPv4GlueIPs": [
+          "156.154.103.3"
+        ],
+        "IPv6GlueIPs": [
+          "2610:a1:1010::3"
+        ]
+      },
+      {
+        "NameServer": "dns1.nic.uk.",
+        "IPv4GlueIPs": [
+          "213.248.216.1"
+        ],
+        "IPv6GlueIPs": [
+          "2a01:618:400::1"
+        ]
+      },
+      {
+        "NameServer": "dns2.nic.uk.",
+        "IPv4GlueIPs": [
+          "103.49.80.1"
+        ],
+        "IPv6GlueIPs": [
+          "2401:fd80:400::1"
+        ]
+      },
+      {
+        "NameServer": "dns3.nic.uk.",
+        "IPv4GlueIPs": [
+          "213.248.220.1"
+        ],
+        "IPv6GlueIPs": [
+          "2a01:618:404::1"
+        ]
+      },
+      {
+        "NameServer": "dns4.nic.uk.",
+        "IPv4GlueIPs": [
+          "43.230.48.1"
+        ],
+        "IPv6GlueIPs": [
+          "2401:fd80:404::1"
+        ]
+      }
+    ],
+    "ns-1670.awsdns-16.co.uk.|213.248.216.1|1": [
+      {
+        "NameServer": "g-ns-336.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.193.80"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:5000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-912.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.195.144"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:9000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1491.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.197.211"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:d300::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1812.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.199.20"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:1400::1"
+        ]
+      }
+    ],
+    "ns-1670.awsdns-16.co.uk.|213.248.220.1|1": [
+      {
+        "NameServer": "g-ns-336.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.193.80"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:5000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-912.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.195.144"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:9000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1491.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.197.211"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:d300::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1812.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.199.20"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:1400::1"
+        ]
+      }
+    ],
+    "ns-1670.awsdns-16.co.uk.|43.230.48.1|1": [
+      {
+        "NameServer": "g-ns-336.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.193.80"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:5000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-912.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.195.144"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:9000::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1491.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.197.211"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:d300::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1812.awsdns-16.co.uk.",
+        "IPv4GlueIPs": [
+          "205.251.199.20"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:1400::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.12.94.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.26.92.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.31.80.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.33.14.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.35.51.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.41.162.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.42.93.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.43.172.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.48.79.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.5.6.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.52.178.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.54.112.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|192.55.83.30|1": [
+      {
+        "NameServer": "g-ns-505.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.193.249"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5301:f900::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-826.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.195.58"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5303:3a00::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1400.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.197.120"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5305:7800::1"
+        ]
+      },
+      {
+        "NameServer": "g-ns-1976.awsdns-56.net.",
+        "IPv4GlueIPs": [
+          "205.251.199.184"
+        ],
+        "IPv6GlueIPs": [
+          "2600:9000:5307:b800::1"
+        ]
+      }
+    ],
+    "ns-967.awsdns-56.net.|199.9.14.201|1": [
+      {
+        "NameServer": "a.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.5.6.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:a83e::2:30"
+        ]
+      },
+      {
+        "NameServer": "b.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.33.14.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:231d::2:30"
+        ]
+      },
+      {
+        "NameServer": "c.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.26.92.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:83eb::30"
+        ]
+      },
+      {
+        "NameServer": "d.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.31.80.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:856e::30"
+        ]
+      },
+      {
+        "NameServer": "e.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.12.94.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:1ca1::30"
+        ]
+      },
+      {
+        "NameServer": "f.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.35.51.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:d414::30"
+        ]
+      },
+      {
+        "NameServer": "g.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.42.93.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:eea3::30"
+        ]
+      },
+      {
+        "NameServer": "h.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.54.112.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:8cc::30"
+        ]
+      },
+      {
+        "NameServer": "i.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.43.172.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:39c1::30"
+        ]
+      },
+      {
+        "NameServer": "j.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.48.79.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:7094::30"
+        ]
+      },
+      {
+        "NameServer": "k.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.52.178.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:d2d::30"
+        ]
+      },
+      {
+        "NameServer": "l.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.41.162.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:d937::30"
+        ]
+      },
+      {
+        "NameServer": "m.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.55.83.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:501:b1f9::30"
+        ]
+      }
+    ]
+  }
+}

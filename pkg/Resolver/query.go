@@ -1,153 +1,135 @@
-// DNS 报文的发送和接受
+/*
+ * Copyright 2025 ahlien from Tsinghua University
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
 package Resolver
 
 import (
-	//"context"
-	//"fmt"
-	//"time"
-
 	"net"
 	"time"
 
 	"github.com/miekg/dns"
 )
 
+// ExchangeStatus represents the result status of a DNS exchange operation
 type ExchangeStatus int
 
-// 定义与 Status 相关的常量。
+// Constants defining different DNS exchange statuses
 const (
-	Normal       ExchangeStatus = iota // 正常状态
-	Timeout                            // 超时状态
-	TxIDMismatch                       // TXID不匹配
-	Failure                            // 交互失败，但失败原因不是 Timeout
+	Normal       ExchangeStatus = iota // Normal successful exchange
+	Timeout                            // Exchange timed out
+	TxIDMismatch                       // Transaction ID mismatch between request and response
+	Failure                            // Exchange failed (not due to timeout)
 )
 
-// 封装一下，方便调用 返回query msg
-func NewMsg(Type uint16, domain string) *dns.Msg {
-	return buildpack(Type, domain)
+// NewMsg creates and returns a new DNS query message for the specified domain and record type
+func NewMsg(recordType uint16, domain string) *dns.Msg {
+	return buildPacket(recordType, domain)
 }
 
-// func buildpack(Type uint16, domain string) *dns.Msg {
-// 	domain = dns.Fqdn(domain)
-// 	// Create a new DNS message
-// 	msg := new(dns.Msg)
-// 	//msg.SetQuestion(dns.Fqdn(domain), Type)
-// 	msg.Id = dns.Id() //随机生成16bit的整数
-// 	// //msg.Id = 4096
-// 	msg.RecursionDesired = false
-// 	msg.Question = make([]dns.Question, 1)
-// 	msg.Question[0] = dns.Question{
-// 		Name:   domain,
-// 		Qtype:  Type,
-// 		Qclass: dns.ClassINET,
-// 	}
-// 	// Enable EDNS0
-// 	o := new(dns.OPT)
-// 	o.Hdr.Name = "."
-// 	o.Hdr.Rrtype = dns.TypeOPT
-// 	msg.Extra = append(msg.Extra, o)
-
-// 	return msg
-// }
-
-func buildpack(Type uint16, domain string) *dns.Msg {
-	domain = dns.Fqdn(domain)
+// buildPacket constructs a standard DNS query packet with EDNS0 support
+func buildPacket(recordType uint16, domain string) *dns.Msg {
+	// Convert domain to fully qualified domain name (FQDN)
+	fqdnDomain := dns.Fqdn(domain)
+	
 	msg := new(dns.Msg)
-	msg.Id = dns.Id() //随机生成16bit的整数
-	//msg.Id = 4096
-	msg.RecursionDesired = true
+	msg.Id = dns.Id() // Generate random 16-bit transaction ID
+	msg.RecursionDesired = true // Enable recursion request
 	msg.Question = make([]dns.Question, 1)
+	
+	// Set up DNS question section
 	msg.Question[0] = dns.Question{
-		Name:   domain,
-		Qtype:  Type,
-		Qclass: dns.ClassINET,
+		Name:   fqdnDomain,
+		Qtype:  recordType,
+		Qclass: dns.ClassINET, // Internet class (IPv4/IPv6)
 	}
-	// // Enable EDNS0
-	// o := new(dns.OPT)
-	// o.Hdr.Name = "."
-	// o.Hdr.Rrtype = dns.TypeOPT
-	// msg.Extra = append(msg.Extra, o)
-
-	msg.SetEdns0(4096, false) // 设置 UDP 数据包最大长度为 4096 字节   true和false表示是否支持DNSSEC
-
+	
+	// Enable EDNS0 (Extension Mechanisms for DNS) with 4096-byte UDP payload
+	// false = disable DNSSEC support (set to true if DNSSEC validation is needed)
+	msg.SetEdns0(4096, false)
+	
 	return msg
 }
 
-// Exchange 发送msg 接收响应
-func (d *Dig) Exchange(m *dns.Msg) (*dns.Msg, ExchangeStatus) {
-	var msg *dns.Msg
+// Exchange sends a DNS message to the configured server and handles retries
+// Returns the DNS response and exchange status
+func (d *Rmap) Exchange(msg *dns.Msg) (*dns.Msg, ExchangeStatus) {
+	var response *dns.Msg
 	var status ExchangeStatus
-	for i := 0; i < d.SetRetry(2); i++ {
-		//fmt.Println(i)
-		msg, status = d.exchange(m) //TODO返回一个空的context，todo 通常用在并不知道传递什么 context的情形
+	
+	// Get retry count (default: 2 retries) and execute exchange with retries
+	retryCount := d.SetRetry(2)
+	for i := 0; i < retryCount; i++ {
+		response, status = d.singleExchange(msg)
+		// fmt.Println(response,status)
+		
+		// Return immediately if exchange is successful or irrecoverable (timeout/failure)
 		if status != Normal {
-			return msg, status
+			return response, status
 		}
+		
+		// Short delay before next retry (100ms)
 		time.Sleep(time.Second / 10)
-		// dns.Exchange()
 	}
-	return msg, Normal
+
+
+	
+	// All retries completed successfully
+	return response, Normal
 }
 
-func (d *Dig) exchange(m *dns.Msg) (*dns.Msg, ExchangeStatus) {
-	client := &dns.Client{
-		UDPSize: 4096,
-		Timeout: d.readTimeout(),
-		//DualStack :true,
-	}
-	// Send the DNS query
-	// client := new(dns.Client)
-	res, _, err := client.Exchange(m, d.RemoteAddr)
-	if err != nil {
-		//fmt.Println("Exchange error:", err)
-		if netErr, ok := err.(net.Error); ok && netErr.Timeout() {
-			//fmt.Println("Exchange error:", err)
-			//fmt.Println(d.RemoteAddr)
-			return nil, Timeout
-		}
-		return nil, Failure
-	}
-	if res.Id != m.Id {
-		return res, TxIDMismatch
-	}
+// singleExchange performs a single DNS transaction without retries.
+// It handles low-level network communication and basic error classification.
+func (d *Rmap) singleExchange(msg *dns.Msg) (*dns.Msg, ExchangeStatus) {
+    // Determine network protocol based on the configured Protocol (default: UDP)
+    network := "udp"
+    if d.Protocol == "tcp" {
+        network = "tcp"
+    }
 
-	//fmt.Printf("DNS query time: %v\n", rtt)
-	return res, Normal
+    // Initialize the DNS client
+    client := &dns.Client{
+        Net:     network,   // TCP or UDP
+        UDPSize: 4096,      // EDNS0-compliant UDP payload size
+        Timeout: d.readTimeout(),
+    }
+
+    // Send the DNS query to the target server (RemoteAddr)
+    response, _, err := client.Exchange(msg, d.RemoteAddr)
+
+    if err != nil {
+        // Classify the error type: timeout or general failure
+        if netErr, ok := err.(net.Error); ok && netErr.Timeout() {
+            return nil, Timeout
+        }
+        return nil, Failure
+    }
+
+    // Validate the transaction ID to prevent response spoofing
+    if response.Id != msg.Id {
+        return response, TxIDMismatch
+    }
+
+    return response, Normal
 }
 
-// GetMsg 返回msg响应体
-func (d *Dig) GetMsg(Type uint16, domain string) (*dns.Msg, ExchangeStatus) {
-	m := buildpack(Type, domain)
-	return d.Exchange(m)
+// GetMsg constructs a DNS query for the specified domain/type and returns the response
+// Combines packet building and exchange logic into a single method
+func (d *Rmap) GetMsg(recordType uint16, domain string) (*dns.Msg, ExchangeStatus) {
+	msg := buildPacket(recordType, domain)
+	return d.Exchange(msg)
 }
 
-// func queryDNS(domain, ip string, qtype uint16) (*dns.Msg, ExchangeStatus) {
-// 	server := ip + ":53" // DNS 服务器地址
-
-// 	// 创建一个新的 DNS 消息
-// 	msg := new(dns.Msg)
-// 	msg.SetQuestion(dns.Fqdn(domain), qtype)
-
-// 	// 启用 EDNS0
-// 	o := new(dns.OPT)
-// 	o.Hdr.Name = "."
-// 	o.Hdr.Rrtype = dns.TypeOPT
-// 	msg.Extra = append(msg.Extra, o)
-
-// 	// 发送 DNS 查询
-// 	client := new(dns.Client)
-// 	response, _, err := client.Exchange(msg, server)
-
-// 	// if err != nil {
-// 	// 	dns.ErrTime.Error()
-// 	// 	if err == dns.ErrTruncated {
-// 	// 		return response, TxIDMismatch
-// 	// 	} else if err == dns.ErrTimeout {
-// 	// 		return response, Timeout
-// 	// 	} else {
-// 	// 		return response, Failure
-// 	// 	}
-// 	// }
-
-// 	return response, Normal
-// }

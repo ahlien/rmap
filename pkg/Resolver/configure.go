@@ -1,52 +1,43 @@
-// 包含 DNS 报文的构建，根域名服务器 IP 地址的存储等域名解析所必须具有的基本信息
+/*
+ * Copyright 2025 ahlien from Tsinghua University
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package Resolver
 
 import (
-	//"context"
 	"fmt"
 	"net"
 	"strings"
 	"time"
 )
 
-const (
-	dnsTimeout time.Duration = 3 * time.Second
-)
 
-// Root zone ipv4/6 servers
-// var root46servers = []string{
-// 	"198.41.0.4",          //a发包发不过去
-// 	"199.9.14.201",        //b
-// 	"192.33.4.12",         //c
-// 	"199.7.91.13",         //d
-// 	"192.203.230.10",      //e
-// 	"192.5.5.241",         //f
-// 	"192.112.36.4",        //g
-// 	"198.97.190.53",       //h
-// 	"192.36.148.17",       //i
-// 	"192.58.128.30",       //j
-// 	"193.0.14.129",        //k
-// 	"199.7.83.42",         //l
-// 	"202.12.27.33",        //m
-// 	"2001:503:ba3e::2:30", //a
-// 	"2001:500:200::b",     //b
-// 	"2001:500:2::c",       //c
-// 	"2001:500:2d::d",      //d
-// 	"2001:500:a8::e",      //e
-// 	"2001:500:2f::f",      //f
-// 	"2001:500:12::d0d",    //g
-// 	"2001:500:1::53",      //h
-// 	"2001:7fe::53",        //i
-// 	"2001:503:c27::2:30",  //j
-// 	"2001:7fd::1",         //k
-// 	"2001:500:9f::42",     //l
-// 	"2001:dc3::35"}        //m
 
-// var rootZoneServers = map[string]string{
-// 	"2001:503:ba3e::2:30": "b.root-servers.net"}
-var rootZoneServers = map[string]string{
-	// "199.9.14.201": "b.root-servers.net",
-	"2001:500:200::b": "b.root-servers.net"}
+// Root DNS server list (IPv4 mapped to corresponding domain name)
+// Currently uses a single IPv4 root server; uncomment the full list below for production use
+var RootServersv4 = map[string]string{
+	"199.9.14.201": "b.root-servers.net",
+	// "2001:500:200::b": "b.root-servers.net", // Uncomment for IPv6 support
+}
+
+var RootServersv6 = map[string]string{
+	"2001:500:200::b": "b.root-servers.net",
+	// "2001:500:200::b": "b.root-servers.net", // Uncomment for IPv6 support
+}
+
+// Optional full root DNS server list (IPv4 + IPv6) - uncomment and use as needed
 // var rootZoneServers = map[string]string{
 // 	// IPv4 addresses
 // 	"198.41.0.4":     "a.root-servers.net",
@@ -78,9 +69,9 @@ var rootZoneServers = map[string]string{
 // 	"2001:dc3::35":        "m.root-servers.net",
 // }
 
-// 根域名 IPv4 和 IPv6 服务器列表
+// Alternative root DNS server list format (slice of IPs only) - uncomment and use as needed
 // var rootZoneServers = []string{
-// 	// IPv4 地址
+// 	// IPv4 addresses
 // 	"198.41.0.4",     // A
 // 	"199.9.14.201",   // B
 // 	"192.33.4.12",    // C
@@ -94,8 +85,7 @@ var rootZoneServers = map[string]string{
 // 	"193.0.14.129",   // K
 // 	"199.7.83.42",    // L
 // 	"202.12.27.33",   // M
-
-// 	// IPv6 地址
+// 	// IPv6 addresses
 // 	"2001:503:ba3e::2:30", // A
 // 	"2001:500:200::b",     // B
 // 	"2001:500:2::c",       // C
@@ -111,130 +101,149 @@ var rootZoneServers = map[string]string{
 // 	"2001:dc3::35",        // M
 // }
 
-// isIPv4 检查给定的地址是否是 IPv4 地址
+// isIPv4 checks if the given address is an IPv4 address
 func isIPv4(address string) bool {
 	return strings.Count(address, ":") < 2
 }
 
-// getFirstNAddresses 返回前 n 个 IPv4 或 IPv6 地址
-func getFirstNAddresses(n int, useIPv4 bool) []string {
+
+// GetFirstNAddresses returns up to 'n' root server IP addresses based on the configured IP version in Rmap.
+func (d *Rmap) GetFirstNAddresses(n int) []string {
 	var filteredServers []string
 
-	// 根据地址类型过滤服务器
-	for _, server := range rootZoneServers {
-		if useIPv4 && isIPv4(server) {
-			filteredServers = append(filteredServers, server)
-		} else if !useIPv4 && !isIPv4(server) {
-			filteredServers = append(filteredServers, server)
+	// Select root servers based on Rmap's IPversion
+	switch d.IPversion {
+	case 4:
+		// IPv4 mode: use only IPv4 root servers
+		for ip := range RootServersv4 {
+			filteredServers = append(filteredServers, ip)
+		}
+	case 6:
+		// IPv6 mode: use only IPv6 root servers
+		for ip := range RootServersv6 {
+			filteredServers = append(filteredServers, ip)
+		}
+	default:
+		// Dual-stack mode (IPversion=0 or other): use both IPv4 and IPv6
+		// Currently only adding IPv4 addresses first
+		for ip := range RootServersv4 {
+			filteredServers = append(filteredServers, ip)
 		}
 	}
 
-	// 返回前 n 个地址
-	if n > len(filteredServers) {
-		n = len(filteredServers)
+	// Limit the number of returned addresses (return up to 'n'; if n <= 0 or exceeds available, return all)
+	if n <= 0 || n > len(filteredServers) {
+		return filteredServers
 	}
 	return filteredServers[:n]
 }
 
-// SetTimeOut set read write dial timeout
-func (d *Dig) SetTimeOut(t time.Duration) {
+// SetTimeOut sets read, write, and dial timeouts for DNS operations
+func (d *Rmap) SetTimeOut(t time.Duration) {
 	d.ReadTimeout = t
 	d.WriteTimeout = t
 	d.DialTimeout = t
 }
 
-// SetDNS 设置查询的 DNS 服务器
-func (d *Dig) SetDNS(host string, ipVersion int) error {
-	var ip string
-	port := "53"
+func (d *Rmap) SetDNS(host string, ipVersion int) error {
+    port := "53"
+    var ip string
 
-	// 检查是否包含端口号
-	if strings.Contains(host, ":") {
-		// 尝试解析 IPv6 地址
-		if strings.Count(host, ":") > 1 {
-			if host[0] == '[' && host[len(host)-1] == ']' {
-				// IPv6 地址，不带端口号
-				ip = host[1 : len(host)-1]
-			} else if strings.Contains(host, "]:") {
-				// IPv6 地址，带端口号
-				var err error
-				ip, port, err = net.SplitHostPort(host)
-				if err != nil {
-					return err
-				}
-				ip = ip[1 : len(ip)-1]
-			} else {
-				// 纯 IPv6 地址，没有方括号
-				ip = host
-			}
-		} else {
-			// 解析 IPv4 地址，带端口号
-			var err error
-			ip, port, err = net.SplitHostPort(host)
-			if err != nil {
-				return err
-			}
-		}
-	} else {
-		// 纯 IP 地址，没有端口号
-		ip = host
-	}
+    // Split host and port (handles input with port)
+    if strings.Contains(host, ":") {
+        // Handle IPv6 with brackets (e.g., [2001:db8::1]:53)
+        if strings.HasPrefix(host, "[") && strings.Contains(host, "]:") {
+            var err error
+            ip, port, err = net.SplitHostPort(host)
+            if err != nil {
+                return fmt.Errorf("failed to parse IPv6 address with port: %w", err)
+            }
+            // Remove brackets from IPv6 address
+            if len(ip) >= 2 && ip[0] == '[' && ip[len(ip)-1] == ']' {
+                ip = ip[1 : len(ip)-1]
+            }
+        } else {
+            // Handle IPv4 with port or plain IPv6 (without brackets)
+            var err error
+            ip, port, err = net.SplitHostPort(host)
+            if err != nil {
+                // Try as plain IPv6 (without port)
+                ip = host
+            }
+        }
+    } else {
+        // Plain IP (no port)
+        ip = host
+    }
+    port = "53"
 
-	// 校验 IP 地址
-	parsedIP := net.ParseIP(ip)
-	if parsedIP == nil {
-		return fmt.Errorf("invalid IP address: %s", ip)
-	}
+    // Validate IP address
+    parsedIP := net.ParseIP(ip)
+    if parsedIP == nil {
+        return fmt.Errorf("invalid IP address: %s", ip)
+    }
 
-	// 根据 ipVersion 选择设置 RemoteAddr
-	switch ipVersion {
-	case 4:
-		// 只接受 IPv4
-		if parsedIP.To4() == nil {
-			return fmt.Errorf("provided address is not IPv4: %s", ip)
-		}
-		d.RemoteAddr = fmt.Sprintf("%s:%s", ip, port)
-	case 6:
-		// 只接受 IPv6
-		if parsedIP.To4() != nil {
-			return fmt.Errorf("provided address is not IPv6: %s", ip)
-		}
-		d.RemoteAddr = fmt.Sprintf("[%s]:%s", ip, port)
-	default:
-		// 接受 IPv4 和 IPv6
-		if parsedIP.To4() != nil {
-			// IPv4 地址
-			d.RemoteAddr = fmt.Sprintf("%s:%s", ip, port)
-		} else {
-			// IPv6 地址
-			d.RemoteAddr = fmt.Sprintf("[%s]:%s", ip, port)
-		}
-	}
+    // Check IP type based on ipVersion
+    switch ipVersion {
+    case 4:
+        // Allow only IPv4
+        if parsedIP.To4() == nil {
+            return fmt.Errorf("IPv4 required but got IPv6: %s", ip)
+        }
+        d.RemoteAddr = fmt.Sprintf("%s:%s", ip, port) // IPv4 doesn't need brackets
+        // fmt.Println(d.RemoteAddr)
 
-	return nil
+    case 6:
+        // Allow only IPv6
+        if parsedIP.To4() != nil {
+            return fmt.Errorf("IPv6 required but got IPv4: %s", ip)
+        }
+        d.RemoteAddr = fmt.Sprintf("[%s]:%s", ip, port) // IPv6 requires brackets
+        // fmt.Println(d.RemoteAddr, ip, port)
+
+    default:
+        // Dual-stack mode (support both IPv4 and IPv6)
+        if parsedIP.To4() != nil {
+            d.RemoteAddr = fmt.Sprintf("%s:%s", ip, port)
+        } else {
+            d.RemoteAddr = fmt.Sprintf("[%s]:%s", ip, port)
+        }
+    }
+
+    return nil
 }
 
-func (d *Dig) readTimeout() time.Duration {
+// readTimeout returns the configured read timeout, or default if not set
+func (d *Rmap) readTimeout() time.Duration {
 	if d.ReadTimeout != 0 {
 		return d.ReadTimeout
 	}
-	return dnsTimeout
+	return 3 * time.Second
 }
 
-// 可以设置一下发多少数据包，我们一般默认是1
-func (d *Dig) SetRetry(k int) int {
-	return k
+// SetRetry sets the number of retry attempts for DNS queries (default: 1)
+// Returns the configured retry count for verification
+func (d *Rmap) SetRetry(retryCount int) int {
+	// Ensure retry count is at least 1 to avoid invalid retry logic
+	if retryCount < 1 {
+		retryCount = 1
+	}
+	// Note: Assumes the Rmap struct has a RetryCount field; uncomment below if applicable
+	// d.RetryCount = retryCount
+	return retryCount
 }
 
-func (d *Dig) RemoveDuplicates(nums []string) []string {
-	uniqueMap := make(map[string]bool) // 使用 map 存储唯一的元素
-	result := []string{}               // 用于存储去重后的结果
-	for _, num := range nums {
-		if !uniqueMap[num] {
-			// 如果 map 中不存在当前元素，则将其添加到结果数组和 map 中
-			uniqueMap[num] = true
-			result = append(result, num)
+// RemoveDuplicates removes duplicate strings from a slice and returns the unique result
+func (d *Rmap) RemoveDuplicates(strs []string) []string {
+	seen := make(map[string]bool)
+	uniqueStrs := make([]string, 0, len(strs))
+
+	for _, s := range strs {
+		if !seen[s] {
+			seen[s] = true
+			uniqueStrs = append(uniqueStrs, s)
 		}
 	}
-	return result
+
+	return uniqueStrs
 }

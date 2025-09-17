@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "Domain": "root-servers.net",
+      "IP": "begin",
+      "QType": 1,
+      "NameServer": "",
+      "Zone": "",
+      "NodeID": 1,
+      "NodeType": "Begin",
+      "Level": 0,
+      "Isvisit": false
+    },
+    {
+      "Domain": "root-servers.net",
+      "IP": "199.9.14.201",
+      "QType": 1,
+      "NameServer": "b.root-servers.net",
+      "Zone": ".",
+      "NodeID": 2,
+      "NodeType": "Root",
+      "Level": 1,
+      "Isvisit": true
+    }
+  ],
+  "edges": [
+    {
+      "FromNodeID": 1,
+      "ToNodeID": 2,
+      "Label": "begin to root server"
+    }
+  ]
+}
