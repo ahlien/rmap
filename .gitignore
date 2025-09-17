@@ -1,0 +1,8 @@
+# Ignore all CSV files
+*.csv
+
+# Ignore all TXT files
+*.txt
+
+# Ignore everything in /pkg/visual/ folder
+/pkg/visual/
