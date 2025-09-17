@@ -1,0 +1,8 @@
+# Ignore new CSV files
+*.csv
+
+# Ignore new TXT files
+*.txt
+
+# Ignore new files in /pkg/visual/
+pkg/visual/*
