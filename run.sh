@@ -5,7 +5,7 @@ DOMAIN="google.com"
 PROTOCOL_UDP="udp"
 
 echo "=== Running single domain: $DOMAIN with protocol $PROTOCOL_UDP ==="
-for VERSION in 0,4,6 ; do
+for VERSION in 0 4 6 ; do
     echo ">>> Testing IP version: $VERSION"
     for MOD in {2..10}; do
         echo "Running mod=$MOD ..."

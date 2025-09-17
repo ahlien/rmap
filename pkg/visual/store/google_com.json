@@ -1,0 +1,1307 @@
+{
+  "domain": "google.com",
+  "nodes": [
+    {
+      "domain": "google.com",
+      "ip": "2001:503:a83e::2:30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 29,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.31.80.30",
+      "qType": 1,
+      "nameServer": "d.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 9,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.41.162.30",
+      "qType": 1,
+      "nameServer": "l.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 25,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:4860:4802:36::a",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 42,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:500:d937::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 54,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:83eb::30",
+      "qType": 28,
+      "nameServer": "c.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 8,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:501:b1f9::30",
+      "qType": 28,
+      "nameServer": "m.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 28,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.33.14.30",
+      "qType": 1,
+      "nameServer": "b.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 5,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.12.94.30",
+      "qType": 1,
+      "nameServer": "e.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 11,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:231d::2:30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 44,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:500:856e::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 46,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.52.178.30",
+      "qType": 1,
+      "nameServer": "k.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 23,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:502:7094::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 52,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:83eb::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 45,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.5.6.30",
+      "qType": 1,
+      "nameServer": "a.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 3,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.42.93.30",
+      "qType": 1,
+      "nameServer": "g.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 15,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.48.79.30",
+      "qType": 1,
+      "nameServer": "j.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 21,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:d2d::30",
+      "qType": 28,
+      "nameServer": "k.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 24,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:d2d::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 53,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:231d::2:30",
+      "qType": 28,
+      "nameServer": "b.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 6,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "216.239.34.10",
+      "qType": 1,
+      "nameServer": "ns2.google.com.",
+      "zone": "google.com.",
+      "nodeID": 31,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:4860:4802:32::a",
+      "qType": 28,
+      "nameServer": "ns1.google.com.",
+      "zone": "google.com.",
+      "nodeID": 32,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:4860:4802:38::a",
+      "qType": 28,
+      "nameServer": "ns4.google.com.",
+      "zone": "google.com.",
+      "nodeID": 36,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:502:8cc::30",
+      "qType": 28,
+      "nameServer": "h.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 18,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:500:d937::30",
+      "qType": 28,
+      "nameServer": "l.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 26,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:4860:4802:32::a",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 41,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "begin",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 1,
+      "nodeType": "Begin",
+      "level": 0,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:500:200::b",
+      "qType": 1,
+      "nameServer": "b.root-servers.net",
+      "zone": "",
+      "nodeID": 2,
+      "nodeType": "Root",
+      "level": 1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:502:1ca1::30",
+      "qType": 28,
+      "nameServer": "e.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 12,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.35.51.30",
+      "qType": 1,
+      "nameServer": "f.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 13,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:502:8cc::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 50,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:501:b1f9::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 55,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:a83e::2:30",
+      "qType": 28,
+      "nameServer": "a.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 4,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:500:856e::30",
+      "qType": 28,
+      "nameServer": "d.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 10,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:4860:4802:34::a",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 38,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2607:f8b0:400a:80b::200e",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 40,
+      "nodeType": "LeaveAAAA",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.26.92.30",
+      "qType": 1,
+      "nameServer": "c.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 7,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:eea3::30",
+      "qType": 28,
+      "nameServer": "g.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 16,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:39c1::30",
+      "qType": 28,
+      "nameServer": "i.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 20,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "216.239.32.10",
+      "qType": 1,
+      "nameServer": "ns1.google.com.",
+      "zone": "google.com.",
+      "nodeID": 33,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "142.250.217.110",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 39,
+      "nodeType": "LeaveA",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:4860:4802:38::a",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 43,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:39c1::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 51,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:d414::30",
+      "qType": 28,
+      "nameServer": "f.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 14,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.43.172.30",
+      "qType": 1,
+      "nameServer": "i.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 19,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:502:7094::30",
+      "qType": 28,
+      "nameServer": "j.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 22,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.55.83.30",
+      "qType": 1,
+      "nameServer": "m.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 27,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "216.239.36.10",
+      "qType": 1,
+      "nameServer": "ns3.google.com.",
+      "zone": "google.com.",
+      "nodeID": 35,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "192.54.112.30",
+      "qType": 1,
+      "nameServer": "h.gtld-servers.net.",
+      "zone": "com.",
+      "nodeID": 17,
+      "nodeType": "IPError",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:4860:4802:34::a",
+      "qType": 28,
+      "nameServer": "ns2.google.com.",
+      "zone": "google.com.",
+      "nodeID": 30,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "216.239.38.10",
+      "qType": 1,
+      "nameServer": "ns4.google.com.",
+      "zone": "google.com.",
+      "nodeID": 37,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:d414::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 48,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:4860:4802:36::a",
+      "qType": 28,
+      "nameServer": "ns3.google.com.",
+      "zone": "google.com.",
+      "nodeID": 34,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:502:1ca1::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 47,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "google.com",
+      "ip": "2001:503:eea3::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 49,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    }
+  ],
+  "edges": [
+    {
+      "fromNodeID": 47,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 22,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 54,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 54,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 55,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 13,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 18,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 11,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 29,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 54,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 34,
+      "toNodeID": 40,
+      "label": "Resolved AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 1,
+      "toNodeID": 2,
+      "label": "Begin -\u003e Root Server"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 10,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 30,
+      "toNodeID": 40,
+      "label": "Resolved AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 32,
+      "toNodeID": 40,
+      "label": "Resolved AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 3,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 14,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 29,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 9,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 29,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 55,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 8,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 55,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 27,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 39,
+      "label": "Resolved A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 54,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 54,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 29,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 21,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 54,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 29,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 6,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 7,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 54,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 39,
+      "label": "Resolved A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 54,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 55,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 29,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 24,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 25,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 26,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 4,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 19,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 36,
+      "toNodeID": 40,
+      "label": "Resolved AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 29,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 55,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 12,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 20,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 28,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 55,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 35,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 29,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 38,
+      "toNodeID": 39,
+      "label": "Resolved A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 23,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 39,
+      "label": "Resolved A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 55,
+      "toNodeID": 32,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 5,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 16,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 55,
+      "toNodeID": 34,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 30,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    }
+  ]
+}

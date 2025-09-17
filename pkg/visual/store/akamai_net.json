@@ -1,0 +1,2025 @@
+{
+  "domain": "akamai.net",
+  "nodes": [
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:231d::2:30",
+      "qType": 28,
+      "nameServer": "b.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 6,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:502:1ca1::30",
+      "qType": 28,
+      "nameServer": "e.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 12,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:d414::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 46,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:d2d::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 51,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:500:d937::30",
+      "qType": 28,
+      "nameServer": "l.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 26,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:501:b1f9::30",
+      "qType": 28,
+      "nameServer": "m.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 28,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "95.101.36.192",
+      "qType": 1,
+      "nameServer": "zd.akamaitech.net.",
+      "zone": "akamai.net.",
+      "nodeID": 30,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:231d::2:30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 42,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.31.80.30",
+      "qType": 1,
+      "nameServer": "d.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 9,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:500:856e::30",
+      "qType": 28,
+      "nameServer": "d.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 10,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.48.79.30",
+      "qType": 1,
+      "nameServer": "j.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 21,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.41.162.30",
+      "qType": 1,
+      "nameServer": "l.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 25,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "96.7.50.192",
+      "qType": 1,
+      "nameServer": "zg.akamaitech.net.",
+      "zone": "akamai.net.",
+      "nodeID": 32,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:a83e::2:30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 41,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:502:8cc::30",
+      "qType": 28,
+      "nameServer": "h.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 18,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "84.53.139.193",
+      "qType": 1,
+      "nameServer": "ns4-193.akamaitech.net.",
+      "zone": "akamai.net.",
+      "nodeID": 37,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2600:1406:32::c1",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 39,
+      "nodeType": "SOA",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:500:856e::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 44,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:502:1ca1::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 45,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.5.6.30",
+      "qType": 1,
+      "nameServer": "a.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 3,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.12.94.30",
+      "qType": 1,
+      "nameServer": "e.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 11,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "23.211.133.192",
+      "qType": 1,
+      "nameServer": "zh.akamaitech.net.",
+      "zone": "akamai.net.",
+      "nodeID": 33,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:500:d937::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 52,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "199.9.14.201",
+      "qType": 1,
+      "nameServer": "b.root-servers.net",
+      "zone": ".",
+      "nodeID": 2,
+      "nodeType": "Root",
+      "level": 1,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.54.112.30",
+      "qType": 1,
+      "nameServer": "h.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 17,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.55.83.30",
+      "qType": 1,
+      "nameServer": "m.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 27,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:83eb::30",
+      "qType": 28,
+      "nameServer": "c.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 8,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.42.93.30",
+      "qType": 1,
+      "nameServer": "g.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 15,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:eea3::30",
+      "qType": 28,
+      "nameServer": "g.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 16,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2600:1480:1::c1",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 40,
+      "nodeType": "SOA",
+      "level": -1,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "begin",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 1,
+      "nodeType": "Begin",
+      "level": 0,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "23.74.25.192",
+      "qType": 1,
+      "nameServer": "zc.akamaitech.net.",
+      "zone": "akamai.net.",
+      "nodeID": 29,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:83eb::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 43,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:501:b1f9::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 53,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:a83e::2:30",
+      "qType": 28,
+      "nameServer": "a.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 4,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.52.178.30",
+      "qType": 1,
+      "nameServer": "k.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 23,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2600:1406:32::c1",
+      "qType": 28,
+      "nameServer": "ns3-193.akamaitech.net.",
+      "zone": "akamai.net.",
+      "nodeID": 35,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:502:8cc::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 48,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.26.92.30",
+      "qType": 1,
+      "nameServer": "c.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 7,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:d414::30",
+      "qType": 28,
+      "nameServer": "f.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 14,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.43.172.30",
+      "qType": 1,
+      "nameServer": "i.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 19,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:502:7094::30",
+      "qType": 28,
+      "nameServer": "j.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 22,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "23.61.199.193",
+      "qType": 1,
+      "nameServer": "ns3-193.akamaitech.net.",
+      "zone": "akamai.net.",
+      "nodeID": 34,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:39c1::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 49,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.33.14.30",
+      "qType": 1,
+      "nameServer": "b.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 5,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "192.35.51.30",
+      "qType": 1,
+      "nameServer": "f.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 13,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:d2d::30",
+      "qType": 28,
+      "nameServer": "k.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 24,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:39c1::30",
+      "qType": 28,
+      "nameServer": "i.gtld-servers.net.",
+      "zone": "net.",
+      "nodeID": 20,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "184.26.161.192",
+      "qType": 1,
+      "nameServer": "ze.akamaitech.net.",
+      "zone": "akamai.net.",
+      "nodeID": 31,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2600:1480:1::c1",
+      "qType": 28,
+      "nameServer": "ns4-193.akamaitech.net.",
+      "zone": "akamai.net.",
+      "nodeID": 36,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:503:eea3::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 47,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "193.108.88.1",
+      "qType": 1,
+      "nameServer": "ns1-1.akamaitech.net.",
+      "zone": "akamai.net.",
+      "nodeID": 38,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "akamai.net",
+      "ip": "2001:502:7094::30",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 50,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    }
+  ],
+  "edges": [
+    {
+      "fromNodeID": 45,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 4,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 5,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 20,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 6,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 27,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 10,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 16,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 8,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 11,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 13,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 28,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 14,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 3,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 9,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 18,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 24,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 12,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 48,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 46,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 25,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 19,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 22,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 23,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 26,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 52,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 49,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 1,
+      "toNodeID": 2,
+      "label": "Begin -\u003e Root Server"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 29,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 35,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 44,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 21,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 47,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 50,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 33,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 45,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 31,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 43,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 37,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 38,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 7,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 41,
+      "toNodeID": 34,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 42,
+      "toNodeID": 36,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 51,
+      "toNodeID": 32,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 53,
+      "toNodeID": 30,
+      "label": "Glue A (IPv4)"
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "domain": "wikipedia.org",
+  "nodes": [
+    {
+      "domain": "wikipedia.org",
+      "ip": "208.80.153.231",
+      "qType": 1,
+      "nameServer": "ns1.wikimedia.org.",
+      "zone": "wikipedia.org.",
+      "nodeID": 16,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "198.35.26.96",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 18,
+      "nodeType": "LeaveA",
+      "level": 4,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:b::1",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 27,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:40::1",
+      "qType": 28,
+      "nameServer": "a2.org.afilias-nst.info.",
+      "zone": "org.",
+      "nodeID": 12,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "199.19.53.1",
+      "qType": 1,
+      "nameServer": "c0.org.afilias-nst.info.",
+      "zone": "org.",
+      "nodeID": 13,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "208.80.154.238",
+      "qType": 1,
+      "nameServer": "ns0.wikimedia.org.",
+      "zone": "wikipedia.org.",
+      "nodeID": 15,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "198.35.27.27",
+      "qType": 1,
+      "nameServer": "ns2.wikimedia.org.",
+      "zone": "wikipedia.org.",
+      "nodeID": 17,
+      "nodeType": "Common",
+      "level": 3,
+      "isVisit": true
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "begin",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 1,
+      "nodeType": "Begin",
+      "level": 0,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "199.9.14.201",
+      "qType": 1,
+      "nameServer": "b.root-servers.net",
+      "zone": ".",
+      "nodeID": 2,
+      "nodeType": "Root",
+      "level": 1,
+      "isVisit": true
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:f::1",
+      "qType": 28,
+      "nameServer": "d0.org.afilias-nst.org.",
+      "zone": "org.",
+      "nodeID": 8,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "199.249.112.1",
+      "qType": 1,
+      "nameServer": "a2.org.afilias-nst.info.",
+      "zone": "org.",
+      "nodeID": 11,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "198.35.27.27",
+      "qType": 28,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 19,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2620:0:863:ed1a::1",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 20,
+      "nodeType": "LeaveAAAA",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:e::1",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 23,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "208.80.154.238",
+      "qType": 28,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 22,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:48::1",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 26,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:f::1",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 28,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "199.19.57.1",
+      "qType": 1,
+      "nameServer": "d0.org.afilias-nst.org.",
+      "zone": "org.",
+      "nodeID": 7,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:e::1",
+      "qType": 28,
+      "nameServer": "a0.org.afilias-nst.info.",
+      "zone": "org.",
+      "nodeID": 10,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "208.80.153.231",
+      "qType": 28,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 21,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:c::1",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 25,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "199.19.54.1",
+      "qType": 1,
+      "nameServer": "b0.org.afilias-nst.org.",
+      "zone": "org.",
+      "nodeID": 3,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:c::1",
+      "qType": 28,
+      "nameServer": "b0.org.afilias-nst.org.",
+      "zone": "org.",
+      "nodeID": 4,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "199.249.120.1",
+      "qType": 1,
+      "nameServer": "b2.org.afilias-nst.org.",
+      "zone": "org.",
+      "nodeID": 5,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "199.19.56.1",
+      "qType": 1,
+      "nameServer": "a0.org.afilias-nst.info.",
+      "zone": "org.",
+      "nodeID": 9,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": true
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:48::1",
+      "qType": 28,
+      "nameServer": "b2.org.afilias-nst.org.",
+      "zone": "org.",
+      "nodeID": 6,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:b::1",
+      "qType": 28,
+      "nameServer": "c0.org.afilias-nst.info.",
+      "zone": "org.",
+      "nodeID": 14,
+      "nodeType": "Common",
+      "level": 2,
+      "isVisit": false
+    },
+    {
+      "domain": "wikipedia.org",
+      "ip": "2001:500:40::1",
+      "qType": 1,
+      "nameServer": "",
+      "zone": "",
+      "nodeID": 24,
+      "nodeType": "Common",
+      "level": -1,
+      "isVisit": false
+    }
+  ],
+  "edges": [
+    {
+      "fromNodeID": 24,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 27,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 4,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 11,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 11,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 7,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 8,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 1,
+      "toNodeID": 2,
+      "label": "Begin -\u003e Root Server"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 3,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 13,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 28,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 12,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 26,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 5,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 7,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 21,
+      "toNodeID": 20,
+      "label": "Resolved AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 24,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 16,
+      "toNodeID": 18,
+      "label": "Resolved A (IPv4)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 9,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 10,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 19,
+      "toNodeID": 20,
+      "label": "Resolved AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 17,
+      "toNodeID": 18,
+      "label": "Resolved A (IPv4)"
+    },
+    {
+      "fromNodeID": 26,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 9,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 24,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 28,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 15,
+      "toNodeID": 18,
+      "label": "Resolved A (IPv4)"
+    },
+    {
+      "fromNodeID": 22,
+      "toNodeID": 20,
+      "label": "Resolved AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 3,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 25,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 26,
+      "toNodeID": 15,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 28,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 6,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 2,
+      "toNodeID": 14,
+      "label": "Glue AAAA (IPv6)"
+    },
+    {
+      "fromNodeID": 23,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 5,
+      "toNodeID": 16,
+      "label": "Glue A (IPv4)"
+    },
+    {
+      "fromNodeID": 13,
+      "toNodeID": 17,
+      "label": "Glue A (IPv4)"
+    }
+  ]
+}

@@ -1,0 +1,1806 @@
+{
+  "Domain": "akamai.net",
+  "CNamelink": [],
+  "Errors": {
+    "SuccessfullyParsed": false,
+    "TimeoutOccurred": false,
+    "RecursionAvailable": false,
+    "SOAInAuthority": true,
+    "CNAMECircularRef": false,
+    "NsInAnswerFound": false,
+    "PacketFormatError": false,
+    "SOAInAnswerFound": false,
+    "OPTError": false,
+    "MultiCircularRef": false,
+    "OneCircularRef": false,
+    "InvalidIP": false,
+    "IPv4Reserved": false,
+    "IPv6Reserved": false,
+    "RootAuthOverride": false,
+    "NonRootAuthOverride": true,
+    "NoNsRecordFound": false,
+    "NSNotGlueIP": false,
+    "AuthOverrideWithGlueIP": true,
+    "RedirectToRoot": false,
+    "ResourceReuse": false,
+    "NonRoutableIP": false,
+    "CircularDependencies": false,
+    "ANSintheSameAS": true,
+    "ANSv4under24prefix": false,
+    "ANSv6under64prefix": false,
+    "ANSv6under48prefix": false,
+    "NotOnlyOneCnameRR": false,
+    "SameRRinAnswer": false,
+    "SameRRinAuthority": false,
+    "SameRRinAddiditional": false,
+    "OtherError": false,
+    "UnsupportedDNSKEYAlgorithm": false,
+    "UnsupportedDSDigestType": false,
+    "StaleAnswer": false,
+    "ForgedAnswer": false,
+    "DNSSECIndeterminate": false,
+    "DNSSECBogus": false,
+    "SignatureExpired": false,
+    "SignatureNotYetValid": false,
+    "DNSKEYMissing": false,
+    "RRSIGsMissing": false,
+    "NoZoneKeyBitSet": false,
+    "NSECMissing": false,
+    "CachedError": false,
+    "NotReady": false,
+    "Blocked": false,
+    "Censored": false,
+    "Filtered": false,
+    "Prohibited": false,
+    "StaleNXDOMAINAnswer": false,
+    "NotAuthoritative": false,
+    "NotSupported": false,
+    "NoReachableAuthority": false,
+    "NetworkError": false,
+    "InvalidData": false,
+    "NoError": false,
+    "FormatError": false,
+    "ServerFailure": false,
+    "NXDOMAIN": false,
+    "NotImplemented": false,
+    "Refused": false,
+    "YXDomain": false,
+    "YXRRSet": false,
+    "NXRRSet": false,
+    "NotAuth": false,
+    "NotZone": false
+  },
+  "Records": {
+    "akamai.net|192.12.94.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.26.92.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.31.80.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.33.14.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.35.51.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.41.162.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.42.93.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.43.172.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.48.79.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.5.6.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.52.178.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.54.112.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|192.55.83.30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|199.9.14.201|1": [
+      {
+        "NameServer": "a.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.5.6.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:a83e::2:30"
+        ]
+      },
+      {
+        "NameServer": "b.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.33.14.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:231d::2:30"
+        ]
+      },
+      {
+        "NameServer": "c.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.26.92.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:83eb::30"
+        ]
+      },
+      {
+        "NameServer": "d.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.31.80.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:856e::30"
+        ]
+      },
+      {
+        "NameServer": "e.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.12.94.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:1ca1::30"
+        ]
+      },
+      {
+        "NameServer": "f.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.35.51.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:d414::30"
+        ]
+      },
+      {
+        "NameServer": "g.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.42.93.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:eea3::30"
+        ]
+      },
+      {
+        "NameServer": "h.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.54.112.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:8cc::30"
+        ]
+      },
+      {
+        "NameServer": "i.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.43.172.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:39c1::30"
+        ]
+      },
+      {
+        "NameServer": "j.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.48.79.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:502:7094::30"
+        ]
+      },
+      {
+        "NameServer": "k.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.52.178.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:503:d2d::30"
+        ]
+      },
+      {
+        "NameServer": "l.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.41.162.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:500:d937::30"
+        ]
+      },
+      {
+        "NameServer": "m.gtld-servers.net.",
+        "IPv4GlueIPs": [
+          "192.55.83.30"
+        ],
+        "IPv6GlueIPs": [
+          "2001:501:b1f9::30"
+        ]
+      }
+    ],
+    "akamai.net|2001:500:856e::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:500:d937::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:501:b1f9::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:502:1ca1::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:502:7094::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:502:8cc::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:503:231d::2:30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:503:39c1::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:503:83eb::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:503:a83e::2:30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:503:d2d::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:503:d414::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ],
+    "akamai.net|2001:503:eea3::30|1": [
+      {
+        "NameServer": "zc.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.74.25.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zd.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "95.101.36.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ze.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "184.26.161.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zg.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "96.7.50.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "zh.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.211.133.192"
+        ],
+        "IPv6GlueIPs": null
+      },
+      {
+        "NameServer": "ns3-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "23.61.199.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1406:32::c1"
+        ]
+      },
+      {
+        "NameServer": "ns4-193.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "84.53.139.193"
+        ],
+        "IPv6GlueIPs": [
+          "2600:1480:1::c1"
+        ]
+      },
+      {
+        "NameServer": "ns1-1.akamaitech.net.",
+        "IPv4GlueIPs": [
+          "193.108.88.1"
+        ],
+        "IPv6GlueIPs": null
+      }
+    ]
+  }
+}
